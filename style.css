@@ -1,0 +1,573 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+    list-style-type: none;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: url("../essentials/roundcursor.svg"), auto;
+}
+
+    /* scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+    /* scrollbar Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.744);
+    border-radius: 5px;
+}
+  
+    /* scrollbar Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+::selection{
+    background: #4b4b4b;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    
+}
+body{
+    background-color: rgb(32, 32, 32);
+    /*
+    background-image: url(fire-roses.gif);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    */
+}
+
+/*_______________navigation starts*/
+.navbar{
+    background-color: rgb(32, 32, 32);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    top: 0%;
+}
+.fa-times,
+.fa-bars{
+    position: fixed;
+    top: 37px;
+    right: 30%;
+    display: none;
+}
+
+/* Logo */
+img{
+    background-color: transparent;
+    margin: 30px;
+    padding: 0;
+    
+}
+.logo{
+    background-color: transparent;
+    height: 80px;
+    width: 30%;
+    float: left;
+    position: fixed;
+}
+
+/* Menubar */
+.menubar{
+    background-color: transparent;
+    height: 80px;
+    width: 70%;
+    float: left;
+    position: fixed;
+    right: 0%;
+}
+.menu{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    right: 10%;
+    position: fixed;
+}
+.menubtn{
+    background-color: transparent;
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+/* Underline styles */
+a{
+    text-decoration: none;
+    cursor: url("../essentials/arrowcursor.svg"), auto;
+}
+.menubtn:hover{  
+    border-bottom: rgba(128, 128, 128, 0.744) 2px solid;
+    cursor: url("../essentials/arrowcursor.svg"), auto;
+}
+
+/*navigation ends_______________*/
+
+
+/*_______Main Body Starts_______*/
+.container{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+/*_______________Leftbar*/
+.leftbar{
+    background-color: transparent;
+    height: 100%;
+    width: 80px;
+    float: left;
+    position: fixed;
+    top: 80px;
+}
+.pagenumber{
+    background-color: transparent;
+    margin-top: 120px;
+    position: fixed;
+    height: fit-content;
+}
+.pgbtn{
+    background-color: transparent;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: url("../essentials/arrowcursor.svg"), auto;
+}
+.pgbtn:hover{
+    border-bottom: rgba(128, 128, 128, 0.744) 2px solid;
+    border-top: rgba(128, 128, 128, 0.744) 2px solid;
+}
+/*leftbar end_______________*/
+
+
+/*-_______________rightbar*/
+.rightbar{
+    height: 100%;
+    width: 80px;
+    float: left;
+    position: fixed;
+    right: 0%;
+    top: 0%;
+}
+
+/* bottom bar */
+.bar1{
+    background-color: rgba(128, 128, 128, 0.744);
+    width: 2px;
+    height: 100%;
+    margin-left: 40px;
+    position: fixed;
+}
+
+/* Social Start*/
+.socialmedia{
+    background-color: rgb(32, 32, 32);
+    position: fixed;
+    top: 55%;
+}
+.socialbtn{
+    position: relative;
+    right: 40%;
+    background-color: transparent;
+    padding: 10px;
+}
+.fa-github:hover,
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-dribbble:hover,
+.fa-behance:hover,
+.fa-linkedin:hover,
+.fa-codepen:hover
+{
+    color: rgba(128, 128, 128, 0.744);
+    cursor: url("../essentials/arrowcursor.svg"), auto;
+}
+/* Social End*/
+
+
+/*rightbar end_______________*/
+
+/*_______Main Body Ends_______*/
+
+
+
+
+/*-_____Main_____*/
+.main{
+    background-color: transparent;
+    width: 100%;
+}
+section{
+    scroll-snap-align: start;
+    position: relative;
+}
+
+
+/* Home Start*/
+.home{
+    height: 100vh;
+    width: 50%;
+    margin-left: 30%;
+    /* padding-top: 20%; */
+    padding-top: 300px;
+}
+.container{
+    height: fit-content;
+}
+.landing{
+    margin-left: 20rem;
+}
+.hirebtn{
+    margin-top: 35px;
+    margin-left: 30rem;
+}
+.btn,
+button{
+    padding: 10px;
+    width: 150px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    margin-left: 50%;
+    cursor: url("../essentials/arrowcursor.svg"), auto;
+}
+/* Home End*/
+
+
+/* About Start*/
+.about{
+    background-color: transparent;
+    height: 100vh;
+    width: 50%;
+    margin-left: 25%;
+    padding-top: 15%;
+}
+.codetogether{
+    margin-left: 55%;
+}
+/* About Ends */
+
+
+/* Skills Start */
+.services{
+    background-color: transparent;
+    height: 100vh;
+    width: 50%;
+    margin-left: 25%;
+    padding-top: 5%;
+}
+.skillbar{
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 20px;
+    text-align: right;
+}
+.skills{
+    padding-bottom: 5px;
+}
+
+.html {width: 95%;}
+.css {width: 90%;}
+.scss {width: 85%;}
+.js {width: 60%;}
+.php {width: 50%;}
+.sql {width: 40%;}
+.vb {width: 70%;}
+.ai {width: 95%;}
+.ap {width: 95%;}
+  
+.html,
+.css,
+.scss,
+.js,
+.php,
+.sql,
+.vb,
+.ai,
+.ap{
+    border-radius: 20px;
+    background: #555;
+    padding: 1px;
+}
+/* Skills End*/
+
+
+/* Portfolio Start*/
+.portfolio{
+    height: 100vh;
+    width: 60%;
+    margin-left: 25%;
+    padding-top: 5%;
+    overflow: hidden;
+}
+/* Portfolio End*/
+
+
+/* Contact Start*/
+.contact{
+    background-color: transparent;
+    height: 100vh;
+    width: 50%;
+    margin-left: 25%;
+    padding-top: 15%;
+}
+.facebookandinsta{
+    background-color: transparent;
+    padding-top: 50px;
+}
+.findme{
+    background-color: transparent;
+}
+.mailto{
+    background-color: transparent;
+    width: 120px;
+    align-self: center;
+}
+button[type="contact"]{
+    background-color: transparent;
+    margin-left: 10%;
+    padding: 10px;
+    width: 150px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    color: black; 
+}
+.mailbtn{
+    padding-top: 50px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+}
+.btn:hover,
+button:hover{
+    background-color: rgba(128, 128, 128, 0.651);
+}
+/*Contact End */
+
+
+/* Footer */
+footer{
+    width: 100%;
+    padding: 15px;
+    text-indent: 50px;
+    margin-top: -50px;
+    position: relative;
+    bottom: 0;
+}
+
+
+h3 span {
+    color: rgba(128, 128, 128, 0.744);
+    position: relative;
+}
+h3 span::before {
+    content: "";
+    height: 30px;
+    width: 2px;
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    background: rgba(128, 128, 128, 0.744);
+    transform: translateY(-45%);
+    animation: blink 0.7s infinite;
+}
+h3 span.stop-blinking::before {
+    animation: none;
+}
+@keyframes blink {
+    50% { opacity: 0 }
+}
+.marquee-container {
+    overflow: hidden;
+    display: inline-flex;
+    white-space: nowrap;
+}
+.album{
+    display: inline-flex;
+    animation: marquee 20s linear infinite;
+    -webkit-animation: marquee 20s linear infinite;
+}
+@keyframes marquee {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#page1{
+    animation-direction: alternate-reverse;
+}
+.img{
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+    padding: 0;
+    border-radius: 10px;
+}
+
+
+.imgs:hover{
+    transform: translate(0px, -5px);
+}
+
+/* Modal */
+
+/* Styles for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    padding-top: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.closeimg {
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: url("../essentials/arrowcursor.svg"), auto;
+}
+.closeimg:hover,
+.closeimg:focus {
+  color: rgba(128, 128, 128, 0.651);
+  text-decoration: none;
+}
+
+.profilephoto{
+    position: absolute;
+    right: 65%;
+    top: 10%;
+    opacity: 20%;
+}
+
+.hiremodal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#thankyouModal,
+.contactpopup,
+.hirepopup,
+.tellpopup {
+    background-color: rgba(128, 128, 128, 0.361);
+    /* margin: 15% auto; */
+    margin: 15% 25%;
+    padding: 20px;
+    width: 50%;
+    border-radius: 20px;
+}
+#thankyouModal{
+    height: fit-content;
+}
+.thankyoupopup{
+    margin: 10%;
+}
+.closepopup {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: url("../essentials/arrowcursor.svg"), auto;
+}
+  
+.closepopup:hover,
+.closepopup:focus,
+.fa-arrow-left:hover {
+    color: rgba(128, 128, 128, 0.651);
+    text-decoration: none;
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2em;
+    justify-content: center;
+}
+.rdo{
+    display: none;
+}
+.btn,
+.opt{
+    margin: 10px;
+
+}
+.popupno{
+    font-family: roboto, sans-serif; 
+    font-weight: lighter; 
+    font-style: italic; 
+    color: rgb(128, 128, 128);
+}
+textarea {
+    background-color: rgba(128, 128, 128, 0.447);
+    width: 80%;
+    margin: 20px;
+    border-radius: 20px;
+    text-indent: 10px;
+    padding: 10px;
+    border: rgba(128, 128, 128, 0.374) 2px solid;
+    outline: 0;
+    resize: none;
+}
+::placeholder {
+    color: white;
+}
+.fa-arrow-left{
+    cursor: url("../essentials/arrowcursor.svg"), auto;
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+    /* position: absolute; */
+}
+.nameandemail{
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.447);
+    border: rgba(128, 128, 128, 0.374) 2px solid;
+    text-indent: 10px;
+    padding: 10px;
+    width: 40%;
+    margin-top: 10px;
+    outline: 0;
+}
+.contactbox{
+    margin-top: 15px;
+}
+  
+#thankYouMessage {
+    background-color: transparent;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px); /* Adjust the blur radius to match the body blur */
+    display: none;
+  }
